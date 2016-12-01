@@ -76,6 +76,9 @@ A stylesheet for the WYSIWYG has been included, so the editor accurately display
 ### SVG Logo
 The theme supports using a *logo.svg* instead of *logo.png* as a default logo.
 
+### Non-breaking Link Arrows
+If you need to add an arrow (or other icon) to the end of a link but want to make sure it doesn't break to the next line on its own, use the ```.link-arrow``` class on the parent element of the link.
+
 ### Fixes and Minor Improvements
 
 * Fieldset styles have been adjusted to help fieldsets actually resemble a ```.panel```.
