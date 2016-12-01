@@ -1,0 +1,16 @@
+.form-search {
+  .group-search {
+    position: relative;
+    .form-text {
+      padding-right: $input-height-base + $padding-small-horizontal;
+    }
+    .btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .btn-text {
+      @include sr-only;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@include jquery-ui-reset;
+
+//== Field Types
+
+//** Date
+.container-inline-date {
+  .form-item {
+    &:last-child {
+      margin-right: 0;
+      input,
+      select {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+//** Calendar Popup
+#ui-datepicker-div {
+  @include jquery-reset-base;
+}
+.ui-datepicker {
+  @include box-shadow(0 6px 12px rgba(0,0,0,.175));
+}
+.ui-datepicker-calendar {
+  td {
+    text-align: center;
+    a,
+    span {
+      text-align: center;
+    }
+  }
+}
+.ui-datepicker-header {
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    height: 20px;
+    right: 0;
+    top: 5px;
+    width: 10px;
+    &.ui-state-hover {
+      background: none;
+      border: none;
+    }
+    .ui-icon {
+      background: none;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      height: 5px;
+      margin-top: 0;
+      transform: translateY(-50%);
+    }
+  }
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    cursor: pointer;
+  }
+
+  .ui-datepicker-prev {
+    left: 0;
+    right: auto;
+    .ui-icon {
+      border-right: 8px solid $brand-primary;
+    }
+  }
+
+  .ui-datepicker-next {
+    left: auto;
+    right: 0;
+    .ui-icon {
+      border-left: 8px solid $brand-primary;
+    }
+  }
+}
+
+//== Fieldsets
+fieldset.panel {
+  // Fieldset styles need some tweaking because Bootstrap's panel styles aren't
+  // really meant to be applied to fieldsets.
+  legend {
+    width: calc(100% + 2px);
+    margin: 0 -1px;
+    border: 1px solid $panel-default-border;
+    font: inherit;
+  }
+  .fieldset-legend {
+    font: inherit;
+  }
+}

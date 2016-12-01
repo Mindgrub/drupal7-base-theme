@@ -1,0 +1,28 @@
+// In the CKEditor text format profile settings, set the Editor CSS to "Define CSS"
+// and in CSS path, enter %b%t/assets/css/wysiwyg.css
+
+//== Imports
+//** Bootstrap
+@import "utils/variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+//** Utilities
+@import "utils/functions";
+@import "utils/mixins/text";
+@import "utils/mixins/tables";
+//** Base
+@import "base/type";
+
+//== Styles
+//
+//** Editor window
+.cke_editable {
+  padding: 1em;
+  img {
+    display: block;
+    max-width: 600px;
+    height: auto;
+  }
+  table {
+    @include table;
+  }
+}

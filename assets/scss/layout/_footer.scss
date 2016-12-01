@@ -1,0 +1,38 @@
+.region-footer {
+  margin-top: $spacer-large;
+  padding-top: $spacer-large;
+  padding-bottom: $spacer-base;
+  background: $well-bg;
+}
+
+.container-region-footer {
+  @include make-container(false);
+  @include screen-menu-breakpoint-max {
+    text-align: center;
+  }
+  @include screen-menu-breakpoint {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.block-region-footer {
+  flex-shrink: 0;
+  &.block-menu {
+    width: 100%;
+    @include screen-menu-breakpoint {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-shrink: 1;
+    }
+    .menu {
+      @include screen-menu-breakpoint {
+        display: flex;
+      }
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}

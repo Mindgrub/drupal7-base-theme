@@ -1,0 +1,51 @@
+// Ajax Throbber
+.ajax-progress-throbber {
+  i {
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+  }
+}
+.progress-disabled {
+  position: relative;
+  .ajax-progress-throbber {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -7px;
+      margin-left: -7px;
+      font-size: 14px;
+      text-shadow: 0 0 1px #666;
+    }
+  }
+}
+
+@-webkit-keyframes spin {
+  0%   {
+    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);  /* IE 9 */
+    transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);  /* IE 9 */
+    transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0%   {
+    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);  /* IE 9 */
+    transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);  /* IE 9 */
+    transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}

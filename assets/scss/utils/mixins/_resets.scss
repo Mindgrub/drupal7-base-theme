@@ -1,0 +1,62 @@
+//== Bootstrap Panel
+@mixin bootstrap-panel-reset {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  .panel-heading,
+  .panel-body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+  }
+  & > .panel-heading {
+    margin-bottom: 0;
+    font-size: inherit;
+    color: inherit;
+    & + .panel-collapse {
+      & > .panel-body {
+        border-top: 0;
+      }
+    }
+  }
+  .panel-title {
+    font-size: inherit;
+    font-weight: bold;
+  }
+}
+
+//== jQuery UI
+@mixin jquery-reset-base {
+  background: #fff;
+  font: inherit;
+  border: 0;
+  color: inherit;
+}
+@mixin jquery-ui-reset {
+  .ui-widget,
+  .ui-widget-content {
+    @include jquery-reset-base;
+  }
+  .ui-widget {
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+    .ui-state-default {
+      @include jquery-reset-base;
+    }
+    .ui-state-active,
+    .ui-state-highlight,
+    .ui-state-hover {
+      color: #fff;
+      background: $brand-primary;
+    }
+  }
+  .ui-widget-header {
+    background: transparent;
+    border: 0;
+    color: inherit;
+  }
+}

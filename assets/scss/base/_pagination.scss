@@ -1,0 +1,13 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  & > li {
+    margin-bottom: rem(10px);
+    & > a,
+    & > span {
+      display: block;
+      float: none;
+    }
+  }
+}

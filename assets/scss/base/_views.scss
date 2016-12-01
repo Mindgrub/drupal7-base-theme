@@ -1,0 +1,23 @@
+//== Exposed Form
+.views-exposed-widgets {
+  @include screen-menu-breakpoint {
+    // Exposed filters can be a varied width, so flexbox makes things easier than
+    // trying to use Bootstrap columns.
+    display: flex;
+    @include make-flex-row;
+  }
+  .views-exposed-widget {
+    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width/2;
+    margin-bottom: rem($form-group-margin-bottom);
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+  .views-submit-button {
+    @include screen-menu-breakpoint {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}

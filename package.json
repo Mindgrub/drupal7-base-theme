@@ -1,0 +1,20 @@
+{
+  "name": "mindgrub_subtheme",
+  "version": "1.0.0",
+  "description": "A Bootstrap sub-theme for Drupal 7.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-install": "^0.6.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1"
+  }
+}

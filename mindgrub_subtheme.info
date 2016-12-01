@@ -1,0 +1,52 @@
+name = Mindgrub Subtheme
+description = A Bootstrap subtheme for Drupal 7.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Page Header'
+regions[help]         = 'Help'
+regions[content_header] = 'Content Header'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary Sidebar'
+regions[sidebar_second]  = 'Secondary Sidebar'
+regions[content_footer] = 'Content Footer'
+regions[footer]         = 'Footer'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = assets/css/style.css
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+;; Bootstrap
+scripts[] = 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Theme Settings
+;;;;;;;;;;;;;;;;;;;;;
+
+
+; Disable BootstrapCDN so the compiled LESS source files can be used.
+settings[bootstrap_cdn] = ''
+
+; Causes problems more often than not.
+settings[bootstrap_button_iconize] = 0
+
+; Navbar position
+settings[bootstrap_navbar_position] = 'static-top'
+
+; Region wells - we should never need to use these.
+settings[bootstrap_region_well-sidebar_first] = ''
+
+

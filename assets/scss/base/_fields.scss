@@ -1,0 +1,35 @@
+//== Label Position
+//** Inline
+.field-label-inline {
+  .label-inline {
+    display: inline;
+    margin-right: 0.25em;
+  }
+}
+
+//== Field Types
+//
+//** Text Long
+.field-type-text-long,
+.field-type-text-with-summary {
+  p:not(:last-child) {
+    margin: 0 0 1em;
+  }
+  iframe {
+    max-width: 100%;
+  }
+  img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    &[style*="float: left"] {
+      margin: 0.5rem 1rem 0.5rem 0;
+    }
+    &[style*="float: right"] {
+      margin: 0.5rem 0 0.5rem 1rem;
+    }
+  }
+  table {
+    @include table;
+  }
+}

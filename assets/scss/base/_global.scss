@@ -1,0 +1,31 @@
+@include sticky-footer;
+
+//== Page Layout
+// Set layout column widths using mixins instead of classes
+// for fun and profit.
+// E.g., for full width pages, use Context to set a body class
+// and adjust styling accordingly.
+.main-content {
+  @include make-container;
+}
+
+.region-content {
+  @include make-sm-column(12);
+  .has-region-sidebar-first &,
+  .has-region-sidebar-second & {
+    @include make-md-column(9);
+  }
+  .has-region-sidebar-first.has-region-sidebar-second & {
+    @include make-md-column(6);
+  }
+}
+
+.region-sidebar-first,
+.region-sidebar-second {
+  @include make-md-column(3);
+}
+
+.container-region-content-header,
+.container-region-content-footer {
+  @include make-container;
+}

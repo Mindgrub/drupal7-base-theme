@@ -1,0 +1,58 @@
+// Using flexbox instead of the default floats allows us to sidestep
+// most vertical positioning issues with navbar elements, and helps
+// prevent menu items from breaking to another line when more are added.
+.container-site-header {
+  @include screen-menu-breakpoint {
+    display: flex;
+    align-items: center;
+  }
+}
+.site-branding {
+  @include screen-menu-breakpoint-max {
+    min-height: $navbar-height;
+  }
+  .home-link {
+    @include screen-menu-breakpoint-max {
+      @include navbar-vertical-align(32px);
+      display: inline-block;
+    }
+  }
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navbar-collapse {
+  @include screen-menu-breakpoint {
+    width: 100%;
+  }
+}
+
+.region-navigation {
+  @include screen-menu-breakpoint {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.block-region-navigation {
+  & + .block-region-navigation {
+    @include screen-menu-breakpoint-max {
+     padding-top: rem($navbar-padding-vertical);
+      &:last-child {
+        padding-bottom: rem($navbar-padding-vertical);
+      }
+    }
+    @include screen-menu-breakpoint {
+     padding-left: rem($navbar-padding-horizontal);
+    }
+  }
+}

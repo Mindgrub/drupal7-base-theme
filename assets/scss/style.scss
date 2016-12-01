@@ -1,0 +1,78 @@
+//== Bootstrap
+@import "utils/variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+//== Utilities
+//
+//## Mixins and functions
+//
+//** Functions
+@import "utils/functions";
+//** Resets for Bootstrap and Drupal styles.
+@import "utils/mixins/resets";
+//** Media query breakpoints
+@import "utils/mixins/breakpoints";
+//** Grid
+@import "utils/mixins/grid";
+//** Text
+@import "utils/mixins/text";
+//** Buttons
+@import "utils/mixins/buttons";
+//** Tables
+@import "utils/mixins/tables";
+
+
+//== Base
+//
+//## Global styles.
+//
+//** Basic scaffolding.
+@import "base/global";
+//** Text styles.
+@import "base/type";
+//** Pagination.
+@import "base/pagination";
+//** Fields.
+@import "base/fields";
+//** Forms.
+@import "base/forms";
+//** Views.
+@import "base/views";
+//** Ajax throbber.
+@import "base/throbber";
+//** Drupal-specific overrides.
+@import "base/drupal";
+
+
+//== Entities
+//
+//## Styles for Drupal entity (paragraph bundles, nodes, users, etc.) view modes.
+// Examples:
+@import "entities/ct-article";  // Content type: Article
+//@import "entities/pg-carousel"; // Paragraph bundle: Carousel
+
+
+//== Components
+//
+//## Modular components. This is a good place to put styles for specific views, fields, blocks, etc.
+// Examples:
+// @import "components/field-tags"; // Field: Tags
+// @import "components/view-related-content"; // View: Related Content
+@import "components/form-search";
+
+
+//== Layout
+//
+//** Major layout sections.
+@import "layout/header"; // Site Header
+@import "layout/footer"; // Site Footer
+@import "layout/page-header"; // Page Header
+
+
+//== Pages
+//
+//** Page-specific styles.
+// NOTE: This should be used *RARELY*. Styles for entity full view and view pages should not be page-dependent but
+// entity/view-dependent.
+@import "pages/front";
