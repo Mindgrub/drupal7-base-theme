@@ -37,7 +37,7 @@ Because the width of menus tends to be variable in nature, a static container wi
 Several templates have been modified to introduce more convenient classes for styling to reduce the occurance of overly complicated CSS selectors.
 
 #### Body
-The \<body\> tag now includes classes for:
+The <body> tag now includes classes for:
 
 * Active and inactive template regions (e.g. ```.has-region-footer```, ```.no-region-sidebar-first```, etc.)
 * If the page is a view page, the body will have a ```.view-page-[view-name]``` class.
