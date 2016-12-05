@@ -20,7 +20,7 @@ function mindgrub_subtheme_preprocess_html(&$variables) {
   drupal_add_js("WebFont.load({google: {families: ['Lato:300,400,700']}});", array('type' => 'inline'));
 
   // Add class for view pages.
-  if ($view = views_get_page_view()) {
+  if (function_exists('views_get_page_view') && $view = views_get_page_view()) {
     $variables['classes_array'][] = 'view-page';
     $variables['classes_array'][] = drupal_html_class('view-page-' . $view->name);
   }
