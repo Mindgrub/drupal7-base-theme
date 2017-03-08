@@ -1,0 +1,9 @@
+{
+  "name": "mindgrub/d7-base-theme",
+  "description": "A hackable boilerplate for Drupal 7 projects utilizing Bootstrap as a base theme",
+  "type": "drupal-theme",
+  "license": "MIT",
+  "require": {
+  	"drupal/bootstrap": "^3.12"
+  }
+}
